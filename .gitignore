@@ -1,0 +1,24 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/semantic-search-app/node_modules
+/semantic-search-app/.pnp
+/semantic-search-app/.pnp.js
+
+# testing
+/semantic-search-app/coverage
+
+# production
+/semantic-search-app/build
+
+# misc
+/semantic-search-app/.DS_Store
+/semantic-search-app/.env.local
+/semantic-search-app/.env.development.local
+/semantic-search-app/.env.test.local
+/semantic-search-app/.env.production.local
+
+/semantic-search-app/npm-debug.log*
+/semantic-search-app/yarn-debug.log*
+/semantic-search-app/yarn-error.log*
+/semantic-search-backend/semantic-search
