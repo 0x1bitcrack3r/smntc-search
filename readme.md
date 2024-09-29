@@ -14,19 +14,25 @@ Built using FastAPI, a modern web framework for building APIs.
 Frontend:
 
 A user-friendly web interface for users to upload documents, input search queries, and view results.
-Developed using React, a popular JavaScript library for building user interfaces. 3. Key Features
-Document Upload: Users can upload multiple text-based documents.
-Natural Language Search: Users can enter natural language queries to search the documents.
-Semantic Similarity: Results are ranked based on semantic relevance rather than just keyword matching.
-Responsive Design: The frontend is designed to be intuitive and user-friendly. 4. Technologies Used
-FastAPI: For building the backend API.
-Uvicorn: ASGI server for running the FastAPI application.
-SQLAlchemy: For interacting with the database.
-PostgreSQL: Relational database for storing documents and their embeddings.
-Sentence Transformers: Pre-trained models for generating embeddings.
-Material-UI: A popular React UI framework to enhance the frontend design.
-pdfplumber: For extracting text from PDF files. 5. How It Works
-Document Upload:
+Developed using React, a popular JavaScript library for building user interfaces.
+
+3. Key Features
+   Document Upload: Users can upload multiple text-based documents.
+   Natural Language Search: Users can enter natural language queries to search the documents.
+   Semantic Similarity: Results are ranked based on semantic relevance rather than just keyword matching.
+   Responsive Design: The frontend is designed to be intuitive and user-friendly.
+
+4. Technologies Used
+   FastAPI: For building the backend API.
+   Uvicorn: ASGI server for running the FastAPI application.
+   SQLAlchemy: For interacting with the database.
+   PostgreSQL: Relational database for storing documents and their embeddings.
+   Sentence Transformers: Pre-trained models for generating embeddings.
+   Material-UI: A popular React UI framework to enhance the frontend design.
+   pdfplumber: For extracting text from PDF files.
+
+5. How It Works
+   Document Upload:
 
 Users upload documents through the React frontend.
 The uploaded files are sent to the FastAPI backend via a POST request.
@@ -45,7 +51,9 @@ The application retrieves all document embeddings from the database and computes
 The top results (most similar documents) are then returned to the frontend.
 Displaying Results:
 
-The frontend displays the ranked search results to the user, showing relevant document names and their similarity scores. 6. User Experience
-Responsive UI: The React frontend uses Material-UI to create a visually appealing and responsive user interface.
-Feedback Mechanism: After uploading a document, users receive immediate feedback through Snackbar notifications.
-Simple Interaction: Users can easily switch between uploading documents and searching queries, with clear labels and buttons.
+The frontend displays the ranked search results to the user, showing relevant document names and their similarity scores.
+
+6. User Experience
+   Responsive UI: The React frontend uses Material-UI to create a visually appealing and responsive user interface.
+   Feedback Mechanism: After uploading a document, users receive immediate feedback through Snackbar notifications.
+   Simple Interaction: Users can easily switch between uploading documents and searching queries, with clear labels and buttons.
