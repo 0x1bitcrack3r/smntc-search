@@ -10,6 +10,7 @@ Backend:
 
 Responsible for handling document uploads, processing them, generating embeddings, and executing semantic searches.
 Built using FastAPI, a modern web framework for building APIs.
+
 Frontend:
 
 A user-friendly web interface for users to upload documents, input search queries, and view results.
